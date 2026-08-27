@@ -1,0 +1,121 @@
+.site-footer {
+  padding: 100px 40px 60px;
+  border-top: 1px solid var(--line);
+}
+
+
+@media (max-width: 720px) {
+  .site-footer {
+    padding: 0 20px 40px;
+  }
+
+  .site-footer .rail {
+    padding-top: 70px;
+  }
+}
+.scrolled-far {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--line);
+}
+
+.scrolled-far .eyebrow {
+  text-align: center;
+}
+
+.scrolled-line {
+  font-family: var(--serif);
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--ink);
+  max-width: 32ch;
+  line-height: 1.5;
+}
+
+.quote-block {
+  text-align: center;
+  padding: 70px 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.quote-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 620px;
+}
+
+.quote-mark {
+  font-family: var(--serif);
+  font-size: 40px;
+  color: var(--ink-faint);
+  line-height: 1;
+}
+
+.quote-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(19px, 2.6vw, 26px);
+  color: var(--ink);
+  max-width: 42ch;
+  line-height: 1.6;
+}
+
+.quote-author {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.footer-credits {
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+
+.footer-credits b {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.footer-copyright {
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.footer-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+
+
+

@@ -1,0 +1,133 @@
+.hero {
+  padding: 120px 40px 100px;
+  position: relative;
+}
+
+@media (max-width: 720px) {
+  .hero {
+     padding: 80px 20px 70px;
+  }
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  margin-bottom: 36px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+h1.name {
+  font-family: var(--serif);
+  font-weight: 450;
+  font-size: clamp(44px, 8vw, 104px);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+}
+
+h1.name .cursor {
+  display: inline-block;
+  width: 0.5ch;
+  background: var(--ink);
+  animation: blink 1s steps(1) infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.role {
+  font-family: var(--mono);
+  font-size: 15px;
+  color: var(--ink-dim);
+  margin-top: 26px;
+  max-width: 60ch;
+  line-height: 1.7;
+}
+
+.hero-links {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink);
+  background: #0d0d0d;
+  border: 1px solid var(--line);
+  padding: 11px 16px 11px 12px;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+}
+
+.hero-icon-btn:hover {
+  border-color: #3a3a37;
+  background: #131313;
+  transform: translateY(-1px);
+}
+
+.hib-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #161616;
+  border-radius: 6px;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.hib-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hero-icon-btn > svg {
+  width: 11px;
+  height: 11px;
+  color: var(--ink-faint);
+  margin-left: 2px;
+}
+
+
+
+.hero-icon-btn:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
