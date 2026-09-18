@@ -16,9 +16,9 @@ export const profile = {
 };
 
 export const aboutBullets = [
-  "Hey, I'm Ejaz — a software engineer who likes taking a rough prompt or a messy codebase and turning it into something structured people can actually use.",
-  "I split my time between full-stack apps and applied AI — RAG pipelines, LLM integration, vector search — and I'm just as comfortable in auth, schemas, and deployment as I am in the UI.",
-  "I don't ship half-finished demos. If it's not maintainable, it's not done — and I build fastest when I'm chasing something I don't fully understand yet.",
+  "Hey, I'm Ejaz, a software engineer who likes taking a rough prompt or a messy codebase and turning it into something structured people can actually use.",
+  "I split my time between full-stack apps and applied AI: RAG pipelines, LLM integration, vector search. I'm just as comfortable in auth, schemas, and deployment as I am in the UI.",
+  "I don't ship half-finished demos. If it's not maintainable, it's not done, and I build fastest when I'm chasing something I don't fully understand yet.",
 ];
 
 export const devSnapshot = [
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Ejaz234/Medora",
     image: "/projects/medora.png",
   },
-  
+
   {
     slug: "forge",
     name: "Forge",
