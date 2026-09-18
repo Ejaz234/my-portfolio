@@ -29,6 +29,29 @@ export const devSnapshot = [
 ];
 
 export const projects: Project[] = [
+
+    {
+    slug: "medora",
+    name: "Medora",
+    year: "2026",
+    tag: "AI Medical Assistant",
+    status: "Live",
+    featured: true,
+    description:
+      "A full-stack AI Medical Assistant using Retrieval-Augmented Generation to deliver grounded, source-cited answers from a medical knowledge base.",
+    engineeringDetails: [
+      "Engineered a conversational RAG pipeline with query rewriting and semantic retrieval, indexing a 637-page medical corpus into 4,201 chunks with 384-dimensional HuggingFace embeddings stored in Pinecone.",
+      "Achieved 100% retrieval accuracy (25/25 in-domain, 5/5 out-of-domain rejection) across 30 evaluation questions using a similarity-threshold filter.",
+      "Integrated Groq LLM with LangChain to generate context-aware answers with source document and page references.",
+      "Secured the app with Clerk authentication and per-user conversation ownership, with persistent history stored in Supabase PostgreSQL.",
+      "Containerized the FastAPI backend with Docker and deployed to AWS EC2 via Amazon ECR, fronted by Nginx with HTTPS.",
+    ],
+    stack: ["React", "TypeScript", "FastAPI", "LangChain", "HuggingFace", "Pinecone", "Groq", "Docker"],
+    liveUrl: "https://medora-brown.vercel.app/",
+    githubUrl: "https://github.com/Ejaz234/Medora",
+    image: "/projects/medora.png",
+  },
+  
   {
     slug: "forge",
     name: "Forge",
