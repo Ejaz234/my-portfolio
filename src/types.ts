@@ -22,6 +22,7 @@ export interface SkillItem {
 
 export type SkillCategory =
   | "Languages"
+  | "AI / ML"
   | "Frontend"
   | "Backend"
   | "Databases"

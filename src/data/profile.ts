@@ -1,4 +1,4 @@
-import type { Project, SkillItem } from "../types";
+import type { Project, SkillCategory, SkillItem } from "../types";
 
 export const profile = {
   name: "Ejaz Ahmad Chand",
@@ -12,13 +12,13 @@ export const profile = {
   linkedin: "https://linkedin.com/in/ejaz-ahmad34",
   resume: "/resume.pdf",
   tagline:
-    "Software Engineer building full-stack applications with Next.js and the MERN stack, and AI-powered systems — RAG pipelines, LLM integration, vector search.",
+   " Software Engineer building Generative AI systems (RAG pipelines, LLM integration, semantic search) and full-stack apps with Next.js and the MERN stack.",
 };
 
 export const aboutBullets = [
-  "Hey, I'm Ejaz, a software engineer who likes taking a rough prompt or a messy codebase and turning it into something structured people can actually use.",
-  "I split my time between full-stack apps and applied AI: RAG pipelines, LLM integration, vector search. I'm just as comfortable in auth, schemas, and deployment as I am in the UI.",
-  "I don't ship half-finished demos. If it's not maintainable, it's not done, and I build fastest when I'm chasing something I don't fully understand yet.",
+  "Hey, I'm Ejaz, a software engineer who builds Generative AI systems and full-stack apps, and turns rough ideas into products people can actually use.",
+  "I build RAG pipelines end to end: LangChain, HuggingFace embeddings, Pinecone and pgvector, with LLMs like Gemini and Groq. My Medora assistant answers from a 637-page medical knowledge base, and scored 100% on my 30-question retrieval test.",
+  "I also ship everything around the model: auth, schemas, Docker, and AWS deployment with Nginx. I don't ship half-finished demos. If it isn't maintainable, it isn't done, and I learn fastest when I'm chasing something I don't fully understand yet.",
 ];
 
 export const devSnapshot = [
@@ -114,32 +114,55 @@ export const projects: Project[] = [
   },
 ];
 
-export const skills: SkillItem[] = [
-  { name: "TypeScript", icon: "typescript", category: "Languages" },
-  { name: "JavaScript", icon: "javascript", category: "Languages" },
-  { name: "Java", icon: "java", category: "Languages" },
-  { name: "Python", icon: "python", category: "Languages" },
+export const skills = [
+  // Languages
+  { name: "Python", category: "Languages", icon: "python" },
+  { name: "Java", category: "Languages", icon: "java" },
+  { name: "JavaScript", category: "Languages", icon: "javascript" },
+  { name: "TypeScript", category: "Languages", icon: "typescript" },
+  { name: "SQL", category: "Languages", icon: "sql" },
 
-  { name: "React", icon: "react", category: "Frontend" },
-  { name: "Next.js", icon: "nextjs", category: "Frontend" },
-  { name: "Vite", icon: "vite", category: "Frontend" },
-  { name: "Tailwind CSS", icon: "tailwind", category: "Frontend" },
-  { name: "Shadcn UI", icon: "shadcn", category: "Frontend" },
+  // AI / ML
+  { name: "RAG", category: "AI / ML", icon: "rag" },
+  { name: "LangChain", category: "AI / ML", icon: "langchain" },
+  { name: "LangGraph", category: "AI / ML", icon: "langgraph" },
+  { name: "Gemini API", category: "AI / ML", icon: "gemini" },
+  { name: "Groq", category: "AI / ML", icon: "groq" },
+  { name: "HuggingFace Embeddings", category: "AI / ML", icon: "huggingface" },
+  { name: "Semantic Search", category: "AI / ML", icon: "semantic" },
+  { name: "Prompt Engineering", category: "AI / ML", icon: "prompt" },
 
-  { name: "Node.js", icon: "nodejs", category: "Backend" },
-  { name: "Express.js", icon: "express", category: "Backend" },
-  { name: "Gemini API", icon: "gemini", category: "Backend" },
-  { name: "LangChain", icon: "langchain", category: "Backend" },
+  // Frontend
+  { name: "React.js", category: "Frontend", icon: "react" },
+  { name: "Next.js", category: "Frontend", icon: "nextjs" },
+  { name: "Vite", category: "Frontend", icon: "vite" },
+  { name: "Tailwind CSS", category: "Frontend", icon: "tailwind" },
+  { name: "Shadcn UI", category: "Frontend", icon: "shadcn" },
+  { name: "Redux", category: "Frontend", icon: "redux" },
+  { name: "HTML5", category: "Frontend", icon: "html" },
+  { name: "CSS3", category: "Frontend", icon: "css" },
 
-  { name: "MySQL", icon: "mysql", category: "Databases" },
-  { name: "MongoDB", icon: "mongodb", category: "Databases" },
-  { name: "PostgreSQL", icon: "postgresql", category: "Databases" },
-  { name: "Supabase", icon: "supabase", category: "Databases" },
+  // Backend
+  { name: "Node.js", category: "Backend", icon: "nodejs" },
+  { name: "Express.js", category: "Backend", icon: "express" },
+  { name: "FastAPI", category: "Backend", icon: "fastapi" },
+  { name: "REST APIs", category: "Backend", icon: "rest" },
+  { name: "JWT Auth", category: "Backend", icon: "jwt" },
+  { name: "Prisma ORM", category: "Backend", icon: "prisma" },
+  { name: "Clerk", category: "Backend", icon: "clerk" },
 
-  { name: "AWS", icon: "aws", category: "DevOps & Tools" },
-  { name: "Git", icon: "git", category: "DevOps & Tools" },
-  { name: "GitHub", icon: "github", category: "DevOps & Tools" },
-  { name: "Prisma", icon: "prisma", category: "DevOps & Tools" },
-  { name: "Clerk", icon: "clerk", category: "DevOps & Tools" },
-  { name: "Postman", icon: "postman", category: "DevOps & Tools" },
-];
+  // Databases
+  { name: "MongoDB", category: "Databases", icon: "mongodb" },
+  { name: "PostgreSQL", category: "Databases", icon: "postgresql" },
+  { name: "Supabase", category: "Databases", icon: "supabase" },
+  { name: "pgvector", category: "Databases", icon: "pgvector" },
+  { name: "Pinecone", category: "Databases", icon: "pinecone" },
+
+  // DevOps & Tools
+  { name: "AWS (EC2, S3, ECR, IAM, VPC)", category: "DevOps & Tools", icon: "aws" },
+  { name: "Docker", category: "DevOps & Tools", icon: "docker" },
+  { name: "Nginx", category: "DevOps & Tools", icon: "nginx" },
+  { name: "Git", category: "DevOps & Tools", icon: "git" },
+  { name: "GitHub", category: "DevOps & Tools", icon: "github" },
+  { name: "Postman", category: "DevOps & Tools", icon: "postman" },
+] satisfies { name: string; category: SkillCategory; icon: string }[];
