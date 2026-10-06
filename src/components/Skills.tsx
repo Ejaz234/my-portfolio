@@ -34,7 +34,6 @@ import {
   LuZap,
   LuSearch,
   LuWorkflow,
-  LuNetwork,
   LuMessageSquareText,
   LuDatabase,
   LuShieldCheck,

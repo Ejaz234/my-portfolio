@@ -1,4 +1,4 @@
-import type { Project, SkillCategory, SkillItem } from "../types";
+import type { Project, SkillCategory } from "../types";
 
 export const profile = {
   name: "Ejaz Ahmad Chand",
